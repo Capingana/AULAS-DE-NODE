@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="pr-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <title><%=titulo  %></title>
+    <title>
+        <%=titulo %>
+    </title>
 </head>
+
 <body>
     <%-include("./partials/headerPage") %>
-    <h1>Página Inicial</h1>
-    <%-include("./partials/footerPage") %>
-    
+        <main class="container">
+            <div class="subtitulo-principal">
+                <a href="#">
+                    <%=subtitulo %>
+                </a>
+            </div>
+            <div class="users">
+                <ul>
+                    <% usuario.forEach(element=> { %>
+                        <li>
+                            <%=element.users_name %>
+                        </li>
+                        <% }); %>
+                </ul>
+            </div>
+        </main>
+        <%-include("./partials/footerPage") %>
+
 </body>
+
 </html>

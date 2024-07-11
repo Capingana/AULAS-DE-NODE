@@ -2,7 +2,8 @@ const express=require("express");
 const app=express();
 const PORT=3000;
 const arquivosEstaticos=require("path");
-app.use(express.static(arquivosEstaticos.join(__dirname,"public")));
+// app.use(express.static(arquivosEstaticos.join(__dirname,"public")));
+app.use(express.static("public"))
 const mainRouter=require("./public/routes/mainRouter");
 app.set("view engine","ejs");
 // ================================================================

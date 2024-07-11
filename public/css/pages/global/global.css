@@ -1,3 +1,5 @@
+@import url("./../header.css");
+@import url("./../home.css");
 * {
     margin: 0px;
     padding: 0px;
