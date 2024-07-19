@@ -1,0 +1,12 @@
+@import url("./../pages/headerPage.css");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #2324;
+    font-family: Arial, Helvetica, sans-serif;
+}
