@@ -1,18 +1,15 @@
-const express=require("express");
-const app=express();
-const port=3000;
-const indexRotas=require( "./public/routers/routers");
+const express = require("express");
+const rotas = require("./public/routers/router");
+const app = express();
+const porta = 3000;
 
-// configurações
-app.use(express.static("public"))
+// ===============CONFIGURATIONS
+app.use("/", rotas);
+// ARQUIVOS ESTATICOS
+app.use(express.static("public"));
+// TEMPLATE ENGINE EJS
 app.set("view engine","ejs");
 
-app.use("/",indexRotas);
-// ===========================
-
-
-
-app.listen(port,()=>{console.log("Servidor OK...")});
-
-
-
+app.listen(porta, () => {
+  console.log(`Servidor rodando na porta:${porta}`);
+});
