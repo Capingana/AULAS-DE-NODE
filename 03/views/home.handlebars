@@ -1,1 +1,16 @@
-<h1>Home page</h1>
+<div class="postagens">
+  <h1>Lista de postagens <hr /></h1>
+  {{#each posts}}
+   <div class="feitos">
+     Titulo:{{titulo}}
+    <br />
+    Conteudo:{{conteudo}} <br>
+    Data de postagem: {{#formatDate createdAt}} {{/formatDate}} <br>
+    <div class="btns">
+        <button class="btnDates edit">Editar Postagem</button>
+       <a href="/apagarPost/{{id}}"> <button class="btnDates del">Apagar Postagem</button></a>
+    </div>
+    <hr />
+   </div>
+  {{/each}}
+</div>

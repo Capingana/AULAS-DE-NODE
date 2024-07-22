@@ -4,3 +4,28 @@
     margin: 0 auto;
     max-width: 1000px;
 }
+
+.feitos{
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: white;
+    line-height: 30px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+.btnDates{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 2px;
+    
+}
+.edit{
+    background-color: #444;
+}
+.del{
+    background-color: red;
+}

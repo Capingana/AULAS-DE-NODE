@@ -1,0 +1,33 @@
+.formulario-postagem{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.form-control{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin: 5px 0px;
+}
+.form-control input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.form-control textarea{
+    padding: 10px;
+
+    
+}
+.form-control button{
+    padding: 20px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #616161;
+    border: none;
+    
+}
