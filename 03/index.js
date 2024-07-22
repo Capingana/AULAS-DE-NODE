@@ -19,10 +19,10 @@ app.engine(
   "handlebars",
   handlebars.engine({
     defaultLayout: "main",
-    runtimeOptions: {
-      allowProtoPropertiesByDefault: true,
-      allowProtoMethodsByDefault: true,
-    },
+    // runtimeOptions: {
+    //   allowProtoPropertiesByDefault: true,
+    //   allowProtoMethodsByDefault: true,
+    // },
     helpers: {
       formatDate: (date) => {
         return moment(date).format("DD/MM/YYYY H:m");

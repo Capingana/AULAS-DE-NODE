@@ -2,6 +2,7 @@ const Sequelize = require("sequelize");
 const connection = new Sequelize("postApp", "root", "", {
   host: "localhost",
   dialect: "mysql",
+  query:{raw:true}
 });
 
 connection
